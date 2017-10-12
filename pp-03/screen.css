@@ -29,51 +29,44 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ==== LAYOUT STYLES ==== */
 #content {
   display: flex;
-  flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 
 #three,
 #two,
 #one {
-  width:50vw;
-  height:50vw;
+  width:100vw;
+  height:100vw;
 }
 
 #three {
-
+  order: 3;
 }
 
 #two {
-
+  order: 2;
 }
 
 #one {
-
+  order: 1;
 }
 
 @media screen and (min-width: 600px) {
-  #content {
-              display: flex;
-              flex-wrap: wrap;
-              flex-direction: row;
-              flex-flow:
+
   #three{
           width: 100vw;
           height: 100vw;
-          order: 3;
         }
   #two{
-        width: 50vw;
+        width: 50%;
         height: 50vw;
-        order: 2;
       }
   #one{
-        width: 50vw;
+        width: 50%;
         height: 50vw;
-        order: 1;
       }
 }
-}
+
 
 @media screen and (min-width: 800px) {
 

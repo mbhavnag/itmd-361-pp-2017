@@ -22,7 +22,7 @@ console.log('The value of x is:', x, 'It should be 5.');
   var x = 5;
   function double(num) {
     var x = num * 2;
-    return x
+    return x;
   }
   double(6);
   console.log('The value of x is:', x, 'It should be 5.');
@@ -38,7 +38,7 @@ function arrayEach(array, func) {
   }
 }
 
-arrayEach(['red','green','blue'], console.log);
+arrayEach(['red', 'green', 'blue'], console.log);
 
 console.log(typeof(i)); // should be 'undefined', not 3
 
@@ -54,10 +54,10 @@ function addTwo(x) {
 console.log(addTwo(4)); // 6
 console.log(x); // should be 5 if you corrected the double() function above
 
-//x is passed inside the function which means
-//the scope of x inside the function is restricted
-//to the function, so the global var x is not modified
-//So when console.log(addTwo(4)); is called it will result
-//6 because that was inside a function while x itself
-//is a global variable and since it is declared 5 outside any
-//function it will stay 5 since changes to x were done inside functions
+// x is passed inside the function which means
+// the scope of x inside the function is restricted
+// to the function, so the global var x is not modified
+// So when console.log(addTwo(4)); is called it will result
+// 6 because that was inside a function while x itself
+// is a global variable and since it is declared 5 outside any
+// function it will stay 5 since changes to x were done inside functions

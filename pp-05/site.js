@@ -8,4 +8,11 @@ $.noconflict();
   $('#doorbell').on('click', function(){
     doorbell.play();
   });
+
+window.addEventListener("keypress", function(e){
+  if (e.key === "d") {
+    doorbell.play();
+  }
+});
+
 })(jQuery);

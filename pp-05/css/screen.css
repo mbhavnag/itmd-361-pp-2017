@@ -19,7 +19,13 @@ body {
 }
 
 /* ===== LAYOUT STYLES ===== */
+#doorbell a{
+  text-decoration: none;
+}
 
+#doorbell a:hover {
+  color: blue;
+}
 
 /* ===== MODULAR STYLES ===== */
 
